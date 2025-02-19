@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { PublicLayout } from "@/layouts/PublicLayout";
 import Home from "@/routes/Home";
 import AuthLayout from "@/layouts/AuthLayout";
+import ProtectedLayouts from "@/layouts/ProtectedLayouts";
+import { MainLayout } from "@/layouts/MainLayout";
+
 import SignInPage from "./routes/SignInPage";
 import SignUpPage from "./routes/SignUpPage";
-import ProtectedLayouts from "./layouts/ProtectedLayouts";
-import { MainLayout } from "./layouts/MainLayout";
 
 const App = () => {
   return (
@@ -25,9 +27,17 @@ const App = () => {
           </Route>
 
           {/* Protected Routes */}
-          <Route path="/protected/*" element={<ProtectedLayouts><MainLayout/></ProtectedLayouts>} >
-          </Route>
+          <Route
+            path="/protected/*"
+            element={
+              <ProtectedLayouts>
+                <MainLayout />
+              </ProtectedLayouts>
+            }
+          ></Route>
 
+
+          
         </Routes>
       </Router>
     </>
