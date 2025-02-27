@@ -1,4 +1,4 @@
-import { MainRoutes } from "@/lib/helpers";
+import { MainRoutes } from "@/lib/helpers.ts";
 import { cn } from "@/lib/utils";
 import { NavLink } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Instagram, Linkedin, Container } from "lucide-react"; // Import Lucide icons
+import { Facebook, Twitter, Instagram, Linkedin, Container } from "lucide-react";
 import { Link } from "react-router-dom";
 import { MainRoutes } from "@/lib/helpers";
 

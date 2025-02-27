@@ -1,5 +1,7 @@
+import { MarqueImg } from "@/components/MarqueeImg";
 import { Button } from "@/components/ui/button";
 import { Container, Sparkles } from "lucide-react";
+import Marquee from "react-fast-marquee";
 
 import { Link } from "react-router-dom";
 
@@ -44,7 +46,7 @@ const HomePage = () => {
         {/* image section */}
         <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
           <img
-            src=""
+            src="./"
             alt="heroImage"
             className="w-full h-full object-cover"
           />
@@ -68,18 +70,18 @@ const HomePage = () => {
       </Container>
 
       {/* marquee section */}
-      {/* <div className=" w-full my-12">
+      <div className=" w-full my-12">
         <Marquee pauseOnHover>
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/zoom.png" />
-          <MarqueImg img="/assets/img/logo/firebase.png" />
-          <MarqueImg img="/assets/img/logo/microsoft.png" />
-          <MarqueImg img="/assets/img/logo/meet.png" />
-          <MarqueImg img="/assets/img/logo/tailwindcss.png" />
-          <MarqueImg img="/assets/img/logo/microsoft.png" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
+          <MarqueImg img="./" />
         </Marquee>
-      </div> */}
+      </div>
 
       <Container className="py-8 space-y-8">
         <h2 className="tracking-wide text-xl text-gray-800 font-semibold">
