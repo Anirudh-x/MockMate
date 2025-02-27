@@ -2,12 +2,12 @@ import { getApp, getApps, initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDqzacT6snXWXzDQre9r4Tf2P73Z7uITOQ",
-  authDomain: "mockmate-by-anirudh.firebaseapp.com",
-  projectId: "mockmate-by-anirudh",
-  storageBucket: "mockmate-by-anirudh.firebasestorage.app",
-  messagingSenderId: "849790183515",
-  appId: "1:849790183515:web:64f644d11ee2159699f77e",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = getApps.length > 0? getApp() : initializeApp(firebaseConfig);
