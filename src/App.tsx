@@ -6,6 +6,12 @@ import { SignInPage } from "./routes/SignInPage";
 import { SignUpPage } from "./routes/SignUpPage";
 import ProtectedLayout from "./layouts/ProtectedLayout";
 import { MainLayout } from "./layouts/MainLayout";
+import { Generate } from "./components/Generate";
+import { Dashboard } from "./routes/Dashboard";
+import { CreateEditPage } from "./routes/CreateEditPage";
+import { MockLoadPage } from "./routes/MockLoadPage";
+import { MockInterviewPage } from "./routes/MockInterviewPage";
+import { Feedback } from "./routes/Feedback";
 
 
 
@@ -33,7 +39,7 @@ const App = () => {
           }
         >
           {/* add all the protect routes */}
-          {/* <Route element={<Generate />} path="/generate">
+          <Route element={<Generate />} path="/generate">
             <Route index element={<Dashboard />} />
             <Route path=":interviewId" element={<CreateEditPage />} />
             <Route path="interview/:interviewId" element={<MockLoadPage />} />
@@ -42,7 +48,7 @@ const App = () => {
               element={<MockInterviewPage />}
             />
             <Route path="feedback/:interviewId" element={<Feedback />} />
-          </Route> */}
+          </Route>
         </Route>
       </Routes>
     </Router>
