@@ -1,7 +1,7 @@
 # MockMate
 
 ## Tech Stack
-Next.js \n
-React \n
+Next.js 
+React 
 Typescript
 Firebase
