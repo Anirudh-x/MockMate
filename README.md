@@ -1,7 +1,10 @@
 # MockMate
 
 ## Tech Stack
-Next.js 
+Next.js
+
 React 
+
 Typescript
+
 Firebase
